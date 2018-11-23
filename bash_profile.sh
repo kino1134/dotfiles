@@ -6,7 +6,7 @@ function source_if_exist() {
 source_if_exist ~/.bashrc
 
 # 環境依存の設定を読み込む
-source_if_exist ~/dotfiles/env.sh
+source_if_exist ~/.bash_local
 
 ### Gitの補完・プロンプト設定
 source_if_exist /usr/local/etc/bash_completion.d/git-completion.bash
@@ -27,6 +27,8 @@ if command -v rbenv >/dev/null; then
 fi
 
 ### Colors
+# https://github.com/sindresorhus/pure/wiki
+# https://github.com/sapegin/dotfiles/blob/bash/includes/bash_prompt.bash
 RED="$(tput setaf 1)"
 GREEN="$(tput setaf 2)"
 YELLOW="$(tput setaf 3)"
