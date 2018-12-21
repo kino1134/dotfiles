@@ -20,6 +20,9 @@ source_if_exist /Applications/Docker.app/Contents/Resources/etc/docker-compose.b
 source_if_exist /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion
 source_if_exist /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
 
+### AWS CLIの補完
+source_if_exist /usr/local/etc/bash_completion.d/aws_bash_completer
+
 ### rbenvの初期設定
 if command -v rbenv >/dev/null; then
   eval "$(rbenv init -)"

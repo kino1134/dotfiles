@@ -9,3 +9,5 @@ export PATH="/Users/inoue/src_ex/gradle-4.2.1/bin:$PATH"
 
 # added by travis gem
 [ -f /Users/inoue/.travis/travis.sh ] && source /Users/inoue/.travis/travis.sh
+
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
